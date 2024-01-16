@@ -1,0 +1,12 @@
+[Unit]
+Description=Xcad automation
+StartLimitIntervalSec=0
+[Service]
+Type=simple
+Restart=always
+RestartSec=300
+User=jonathan
+ExecStart=/usr/bin/python3 /home/jonathan/xcad/xcad.py
+
+[Install]
+WantedBy=multi-user.target
